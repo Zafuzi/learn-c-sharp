@@ -1,5 +1,5 @@
-﻿int a = 2100000000;
-int b = 2100000000;
-long c = (long)a + (long)b;
+﻿double a = 42.1; // natural type
+decimal b = 38.2m; // explicit type
+decimal c = checked((decimal)a + b); // coerced type conversion
 
-Console.WriteLine(c);
+Console.WriteLine($"The answer is {c}");
