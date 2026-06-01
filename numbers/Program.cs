@@ -1,5 +1,5 @@
-﻿int a = 18;
-int b = 6;
-int c = a + b;
+﻿int a = 2100000000;
+int b = 2100000000;
+long c = (long)a + (long)b;
 
 Console.WriteLine(c);
