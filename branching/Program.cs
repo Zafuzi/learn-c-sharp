@@ -1,16 +1,18 @@
-﻿int a = 5;
-int b = 6;
+﻿List<string> names = new List<string> { "Sally", "Sue", "Sarah" };
 
-int c = a - b;
+names.Add("Billy");
+names.Add("Bob");
+names.Add("Brad");
 
-int check = 10;
-bool myTest = c > check;
+Console.WriteLine($"Names has {names.Count()} entries.");
 
-if (myTest)
+int index = 0;
+foreach (string name in names)
 {
-	Console.WriteLine($"The answer is greater than {check} | c = {c}");
+	Console.WriteLine($"{index} - {name.ToUpper()}");
+	index++;
 }
-else
-{
-	Console.WriteLine($"The answer is less than {check} | c = {c}");
-}
+
+Console.WriteLine($"FIRST ENTRY: {names[0]}");
+Console.WriteLine($"THIRD ENTRY: {names[2]}");
+Console.WriteLine($"LAST ENTRY: {names[names.Count() - 1]}");
